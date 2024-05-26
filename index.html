@@ -1,86 +1,83 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nefarious Treehouse</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header img {
-            height: 80px;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-    </header>
-    </nav>
-    <main>
-        <h2>Välkommen till Nefarious Treehouse</h2>
-        <p>Din plats för mystiska och spännande äventyr i trädtopparna.</p>
-
-    <script>
-        const images = [
-            'https://www.google.se/logos/doodles/2024/mothers-day-2024-may-26-6753651837110367-l.png',
-            'https://www.google.se/logos/doodles/2024/mothers-day-2024-may-26-6753651837110367-l.png',
-            'https://www.google.se/logos/doodles/2024/mothers-day-2024-may-26-6753651837110367-l.png'
-        ];
-
-        function selectRandomImage() {
-            const randomIndex = Math.floor(Math.random() * images.length);
-            const randomImage = images[randomIndex];
-            document.getElementById('randomImage').src = randomImage;
-        }
-
-        // Automatically select a random image when the page loads
-        window.onload = selectRandomImage;
-    </script>
-
-
-    </main>
-    <footer>
-        <p>&copy; 2024 Nefarious Treehouse.</p>
-    </footer>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nefarious Treehouse</title>
+      <style>
+         body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #f4f4f4;
+         }
+         header {
+         background-color: #333;
+         color: white;
+         padding: 10px 0;
+         text-align: center;
+         }
+         header img {
+         height: 80px;
+         }
+         header h1 {
+         margin: 0;
+         }
+         nav {
+         display: flex;
+         justify-content: center;
+         background-color: #444;
+         }
+         nav a {
+         color: white;
+         padding: 14px 20px;
+         text-decoration: none;
+         text-align: center;
+         }
+         nav a:hover {
+         background-color: #555;
+         }
+         main {
+         padding: 20px;
+         text-align: center;
+         }
+         footer {
+         background-color: #333;
+         color: white;
+         text-align: center;
+         padding: 10px 0;
+         position: fixed;
+         width: 100%;
+         bottom: 0;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+      </header>
+      </nav>
+      <main>
+         <h2>Välkommen till Nefarious Treehouse</h2>
+         <p>Din plats för mystiska och spännande äventyr i trädtopparna.</p>
+         <img id="logo" src="" alt="Random Logo" width="1024" height="1024">
+         <script>
+            // List of image URLs
+            const logoUrls = [
+                'img/NefTreeLogo01.jpg',
+                'img/NefTreeLogo02.jpg',
+                'img/NefTreeLogo03.jpg',
+            ];
+            
+            // Get a random logo URL
+            const randomLogo = logoUrls[Math.floor(Math.random() * logoUrls.length)];
+            
+            // Set the logo image source
+            const logoElement = document.getElementById('logo');
+            logoElement.src = randomLogo;
+         </script>
+      </main>
+      <footer>
+         <p>&copy; 2024 Nefarious Treehouse.</p>
+      </footer>
+   </body>
 </html>
