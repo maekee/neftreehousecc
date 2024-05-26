@@ -59,7 +59,25 @@
     <main>
         <h2>Välkommen till Nefarious Treehouse</h2>
         <p>Din plats för mystiska och spännande äventyr i trädtopparna.</p>
-        <img src="dragontreehouse.jpg" alt="Nefarious Treehouse Logo" width="60%" height="60%">
+
+    <script>
+        const images = [
+            'https://www.google.se/logos/doodles/2024/mothers-day-2024-may-26-6753651837110367-l.png',
+            'https://www.google.se/logos/doodles/2024/mothers-day-2024-may-26-6753651837110367-l.png',
+            'https://www.google.se/logos/doodles/2024/mothers-day-2024-may-26-6753651837110367-l.png'
+        ];
+
+        function selectRandomImage() {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const randomImage = images[randomIndex];
+            document.getElementById('randomImage').src = randomImage;
+        }
+
+        // Automatically select a random image when the page loads
+        window.onload = selectRandomImage;
+    </script>
+
+
     </main>
     <footer>
         <p>&copy; 2024 Nefarious Treehouse.</p>
